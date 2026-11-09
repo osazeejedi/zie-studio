@@ -1,0 +1,33 @@
+/* Minimal reset — the main stylesheet lives inside ZIEStudio.jsx */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  min-height: 100dvh;
+  background: #F5F4EF;
+  color: #121212;
+  font-family: "Inter Tight", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+img, svg, video { max-width: 100%; display: block; }
+button { font: inherit; }
+
+/* Accessibility: skip link */
+.skip-link {
+  position: absolute; left: -9999px; top: 0;
+  background: #1C2A4A; color: #F5F4EF;
+  padding: 10px 14px; border-radius: 0 0 8px 0;
+  z-index: 10000; font-weight: 600;
+}
+.skip-link:focus { left: 0; outline: 2px solid #F5F4EF; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

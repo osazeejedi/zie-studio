@@ -1,0 +1,12 @@
+{
+  "name": "ZIE Innovation Studio",
+  "short_name": "ZIE",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F4EF",
+  "theme_color": "#1C2A4A",
+  "description": "Apparel, print, corporate gifts and event branding — Abuja, Nigeria.",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
